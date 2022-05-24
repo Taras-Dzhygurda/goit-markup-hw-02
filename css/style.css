@@ -1,0 +1,226 @@
+
+:root{
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196f3;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+}
+
+.logo-link{
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.logo-color-header{
+    color: #000000;
+}
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    /* Не понимаю почему ненаследует текст цвет, и как убрать свойство которое запоминает посещаемые ссылки */
+}
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--accent-color)
+}
+.mail-adress,
+.phone-number{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.mail-adress:hover,
+.phone-number:hover{
+    color: var(--accent-color);
+}
+.mail-adress:focus,
+.phone-number:focus {
+    color: var(--accent-color);
+}
+
+/* Hero css */
+
+.bcg-hero{
+    background: #2F303A;
+}
+.tagline-hero{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.modal-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus{
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* Our advantages */
+
+.advantages{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.description{
+    font-size: 14px;
+    line-height: 1.5;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+/* Gallary */
+
+.gallary-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Our Team */
+
+.bcg-team{
+    background: #F5F4FA;
+}
+.team-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.bcg-team-img{
+    background: #FFFFFF;
+}
+.name-team{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.position-team{
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+/* Footer */
+
+.bcg-footer{
+    background: #2F303A
+}
+.logo-color-footer{
+    color: #FFFFFF;
+}
+
+.adress-link{
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.color-adress-link{
+    color: #F5F4FA
+}
+
+ /* Portfolio */
+
+.progects-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.progects-btn:hover,
+.progects-btn:focus{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #2196F3;
+    /* shadow-middle */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+/* Galery projects */
+
+.name-projects{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+}
+.type-projects{
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
